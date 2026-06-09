@@ -22,6 +22,10 @@
           <a href="#" id="nav-cv">Resume</a>
           <a href="#" id="nav-contact">Contact</a>
         </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
@@ -326,66 +330,62 @@
             Full-Stack Projects
           </h2>
 
-          <div class="projects-grid">
-            <!-- PTU Bazar -->
-            <div class="project-card">
-              <div class="project-thumb thumb-fs1">
-                <span class="thumb-label">PTU Bazar</span>
-              </div>
-              <div class="project-body">
-                <a href="https://github.com/amankr32" class="project-title" target="_blank" rel="noopener">PTU Bazar — Multi-Tenant E-Commerce</a>
-                <p class="project-desc">Scalable multi-tenant architecture supporting 50+ university vendors. Tenant-specific dashboards cut onboarding time by 40%. Payment gateway + real-time tracking with 99.9% availability.</p>
-                <div class="project-tags">
-                  <span class="ptag">Next.js</span><span class="ptag">Node.js</span><span class="ptag">PostgreSQL</span><span class="ptag">Multi-Tenancy</span><span class="ptag">Ongoing</span>
+          <div class="proj-list">
+
+            <div class="proj-item">
+              <span class="proj-num">01</span>
+              <div class="proj-body">
+                <div class="proj-header">
+                  <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">PTU Bazar — Multi-Tenant E-Commerce</a>
+                  <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub ↗
+                  </a>
                 </div>
-              </div>
-              <div class="project-card-footer">
-                <a href="https://github.com/amankr32" class="project-link" target="_blank" rel="noopener">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                  GitHub
-                </a>
+                <div class="proj-sub">Next.js · Node.js · PostgreSQL &nbsp;·&nbsp; <span class="proj-year">2026 · Ongoing</span></div>
+                <p class="proj-desc">Scalable multi-tenant architecture supporting 50+ independent university vendors. Tenant-specific dashboards reduced merchant onboarding time by 40%. Integrated payment gateways and real-time tracking with 99.9% availability via cloud deployment.</p>
+                <div class="proj-tags">
+                  <span class="ptag">Next.js</span><span class="ptag">Node.js</span><span class="ptag">PostgreSQL</span><span class="ptag">Multi-Tenancy</span>
+                </div>
               </div>
             </div>
 
-            <!-- Sync Pad -->
-            <div class="project-card">
-              <div class="project-thumb thumb-fs2">
-                <span class="thumb-label">Sync Pad</span>
-              </div>
-              <div class="project-body">
-                <a href="https://github.com/amankr32" class="project-title" target="_blank" rel="noopener">Sync Pad — Real-Time Collaborative Editor</a>
-                <p class="project-desc">Real-time collaborative code editor with sub-100ms sync latency. WebSocket room management supports 100+ concurrent connections with presence tracking and conflict resolution.</p>
-                <div class="project-tags">
-                  <span class="ptag">Socket.IO</span><span class="ptag">React</span><span class="ptag">Express</span><span class="ptag">CodeMirror</span>
+            <div class="proj-item">
+              <span class="proj-num">02</span>
+              <div class="proj-body">
+                <div class="proj-header">
+                  <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">Sync Pad — Real-Time Collaborative Editor</a>
+                  <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub ↗
+                  </a>
                 </div>
-              </div>
-              <div class="project-card-footer">
-                <a href="https://github.com/amankr32" class="project-link" target="_blank" rel="noopener">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                  GitHub
-                </a>
+                <div class="proj-sub">Socket.IO · React · Express · CodeMirror &nbsp;·&nbsp; <span class="proj-year">2025</span></div>
+                <p class="proj-desc">Real-time collaborative code editor with sub-100ms synchronization latency. WebSocket-based room management supports 100+ concurrent connections with presence tracking and conflict resolution.</p>
+                <div class="proj-tags">
+                  <span class="ptag">Socket.IO</span><span class="ptag">React</span><span class="ptag">Express</span><span class="ptag">WebSockets</span>
+                </div>
               </div>
             </div>
 
-            <!-- Blog Platform -->
-            <div class="project-card">
-              <div class="project-thumb thumb-fs3">
-                <span class="thumb-label">Blog</span>
-              </div>
-              <div class="project-body">
-                <a href="https://github.com/amankr32" class="project-title" target="_blank" rel="noopener">Full-Stack Blog Platform</a>
-                <p class="project-desc">MERN multi-user platform with 30% faster API responses via MongoDB indexing. JWT auth managing 1000+ secure sessions. Responsive UI with Material UI — 25% boost in user engagement.</p>
-                <div class="project-tags">
-                  <span class="ptag">MongoDB</span><span class="ptag">Express</span><span class="ptag">React</span><span class="ptag">Node.js</span><span class="ptag">JWT</span>
+            <div class="proj-item">
+              <span class="proj-num">03</span>
+              <div class="proj-body">
+                <div class="proj-header">
+                  <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">Full-Stack Blog Platform</a>
+                  <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub ↗
+                  </a>
+                </div>
+                <div class="proj-sub">MongoDB · Express · React · Node.js &nbsp;·&nbsp; <span class="proj-year">2025</span></div>
+                <p class="proj-desc">MERN multi-user platform with 30% faster API responses via MongoDB indexing and RESTful design. JWT-based auth managing 1,000+ secure sessions with zero reported breaches. Responsive Material UI boosted user engagement by 25%.</p>
+                <div class="proj-tags">
+                  <span class="ptag">MongoDB</span><span class="ptag">Express</span><span class="ptag">React</span><span class="ptag">JWT</span><span class="ptag">Material UI</span>
                 </div>
               </div>
-              <div class="project-card-footer">
-                <a href="https://github.com/amankr32" class="project-link" target="_blank" rel="noopener">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                  GitHub
-                </a>
-              </div>
             </div>
+
           </div>
 
           <!-- ML Projects -->
@@ -396,66 +396,62 @@
             ML / AI Projects
           </h2>
 
-          <div class="projects-grid">
-            <!-- NanoGPT -->
-            <div class="project-card">
-              <div class="project-thumb thumb-ml1">
-                <span class="thumb-label">NanoGPT</span>
-              </div>
-              <div class="project-body">
-                <a href="https://github.com/amankr32" class="project-title" target="_blank" rel="noopener">NanoGPT — Language Model from Scratch</a>
-                <p class="project-desc">Built a GPT-style transformer from scratch in PyTorch — multi-head attention, positional encoding, character-level tokenization. Trained and debugged training loops without pre-built abstractions.</p>
-                <div class="project-tags">
-                  <span class="ptag">PyTorch</span><span class="ptag">Transformers</span><span class="ptag">Python</span>
+          <div class="proj-list">
+
+            <div class="proj-item">
+              <span class="proj-num">01</span>
+              <div class="proj-body">
+                <div class="proj-header">
+                  <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">NanoGPT — Language Model from Scratch</a>
+                  <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub ↗
+                  </a>
                 </div>
-              </div>
-              <div class="project-card-footer">
-                <a href="https://github.com/amankr32" class="project-link" target="_blank" rel="noopener">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                  GitHub
-                </a>
+                <div class="proj-sub">PyTorch · Python &nbsp;·&nbsp; <span class="proj-year">2025</span></div>
+                <p class="proj-desc">Built a GPT-style transformer from scratch — multi-head attention, positional encoding, character-level tokenization. Trained and debugged full training loops in PyTorch without relying on pre-built abstractions.</p>
+                <div class="proj-tags">
+                  <span class="ptag">PyTorch</span><span class="ptag">Transformers</span><span class="ptag">NLP</span>
+                </div>
               </div>
             </div>
 
-            <!-- Fraud Detection -->
-            <div class="project-card">
-              <div class="project-thumb thumb-ml2">
-                <span class="thumb-label">FraudDet</span>
-              </div>
-              <div class="project-body">
-                <a href="https://github.com/amankr32" class="project-title" target="_blank" rel="noopener">Credit Card Fraud Detection</a>
-                <p class="project-desc">Binary classifier handling severe class imbalance via SMOTE and threshold tuning. Compared Logistic Regression, Random Forest, and XGBoost — optimised for precision-recall trade-off.</p>
-                <div class="project-tags">
-                  <span class="ptag">Python</span><span class="ptag">Scikit-learn</span><span class="ptag">XGBoost</span><span class="ptag">SMOTE</span>
+            <div class="proj-item">
+              <span class="proj-num">02</span>
+              <div class="proj-body">
+                <div class="proj-header">
+                  <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">Credit Card Fraud Detection</a>
+                  <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub ↗
+                  </a>
                 </div>
-              </div>
-              <div class="project-card-footer">
-                <a href="https://github.com/amankr32" class="project-link" target="_blank" rel="noopener">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                  GitHub
-                </a>
+                <div class="proj-sub">Scikit-learn · XGBoost · Python &nbsp;·&nbsp; <span class="proj-year">2025</span></div>
+                <p class="proj-desc">Binary classifier tackling severe class imbalance via SMOTE and threshold tuning. Benchmarked Logistic Regression, Random Forest, and XGBoost — optimised for the precision-recall trade-off in fraud contexts.</p>
+                <div class="proj-tags">
+                  <span class="ptag">Scikit-learn</span><span class="ptag">XGBoost</span><span class="ptag">SMOTE</span><span class="ptag">Python</span>
+                </div>
               </div>
             </div>
 
-            <!-- Fake News -->
-            <div class="project-card">
-              <div class="project-thumb thumb-ml3">
-                <span class="thumb-label">FakeNews</span>
-              </div>
-              <div class="project-body">
-                <a href="https://github.com/amankr32" class="project-title" target="_blank" rel="noopener">Fake News Detection — NLP Pipeline</a>
-                <p class="project-desc">End-to-end NLP pipeline: text preprocessing, TF-IDF + word embeddings, ensemble classifiers. Explored underfitting vs. overfitting with cross-validation and feature ablation.</p>
-                <div class="project-tags">
-                  <span class="ptag">Python</span><span class="ptag">NLP</span><span class="ptag">TF-IDF</span><span class="ptag">Ensemble</span>
+            <div class="proj-item">
+              <span class="proj-num">03</span>
+              <div class="proj-body">
+                <div class="proj-header">
+                  <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">Fake News Detection — NLP Pipeline</a>
+                  <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    GitHub ↗
+                  </a>
+                </div>
+                <div class="proj-sub">Python · NLP · Ensemble Models &nbsp;·&nbsp; <span class="proj-year">2025</span></div>
+                <p class="proj-desc">End-to-end NLP pipeline: text preprocessing, TF-IDF and word embeddings, ensemble classifiers. Explored underfitting vs. overfitting using cross-validation and feature ablation.</p>
+                <div class="proj-tags">
+                  <span class="ptag">NLP</span><span class="ptag">TF-IDF</span><span class="ptag">Ensemble</span><span class="ptag">Python</span>
                 </div>
               </div>
-              <div class="project-card-footer">
-                <a href="https://github.com/amankr32" class="project-link" target="_blank" rel="noopener">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                  GitHub
-                </a>
-              </div>
             </div>
+
           </div>
         </section>
 
@@ -668,4 +664,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-

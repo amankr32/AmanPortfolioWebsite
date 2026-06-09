@@ -106,6 +106,38 @@
   setupAvatarFallback('sidebar-avatar', 'sidebar-fallback');
   setupAvatarFallback('mobile-avatar', 'mobile-fallback');
 
+  /* ── THEME TOGGLE ── */
+  var themeToggle = document.getElementById('theme-toggle');
+  var iconSun = themeToggle ? themeToggle.querySelector('.icon-sun') : null;
+  var iconMoon = themeToggle ? themeToggle.querySelector('.icon-moon') : null;
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('ak-theme', theme);
+    if (theme === 'dark') {
+      if (iconSun) iconSun.style.display = 'none';
+      if (iconMoon) iconMoon.style.display = 'block';
+    } else {
+      if (iconSun) iconSun.style.display = 'block';
+      if (iconMoon) iconMoon.style.display = 'none';
+    }
+  }
+
+  // Load saved preference, or use system preference
+  var savedTheme = localStorage.getItem('ak-theme');
+  if (savedTheme) {
+    applyTheme(savedTheme);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    applyTheme('dark');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme');
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  }
+
   /* ── INIT ── */
   showPage('about');
 })();
