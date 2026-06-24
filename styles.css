@@ -1,5 +1,5 @@
 /* ===========================
-   styles.css — Monisha Jegadeesan Portfolio
+   styles.css — Aman Kumar Portfolio
    =========================== */
 
 *, *::before, *::after {
@@ -120,6 +120,14 @@ a {
   color: var(--link);
   text-decoration: none;
   transition: color 0.2s;
+}
+
+/* ── PHOSPHOR ICONS ── */
+i[class^="ph"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 a:hover {
@@ -1070,7 +1078,7 @@ footer {
   transition: box-shadow 0.2s;
 }
 .glance-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
-.glance-icon { font-size: 1.4rem; line-height: 1; flex-shrink: 0; margin-top: 0.1rem; }
+.glance-icon { font-size: 1.5rem; color: var(--link); flex-shrink: 0; margin-top: 0.1rem; line-height: 1; }
 .glance-title { font-size: 0.87rem; font-weight: 700; color: var(--heading); margin-bottom: 0.1rem; }
 .glance-sub { font-size: 0.75rem; color: var(--link); margin-bottom: 0.4rem; }
 .glance-body p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; margin: 0; }
@@ -1183,7 +1191,7 @@ footer {
   transition: box-shadow 0.2s;
 }
 .value-card:hover { box-shadow: 0 2px 10px rgba(0,0,0,0.07); }
-.value-icon { font-size: 1.3rem; margin-bottom: 0.4rem; }
+.value-icon { font-size: 1.5rem; color: var(--link); margin-bottom: 0.5rem; display: block; line-height: 1; }
 .value-title { font-size: 0.87rem; font-weight: 700; color: var(--heading); margin-bottom: 0.35rem; }
 .value-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.55; margin: 0; }
 
@@ -1226,10 +1234,10 @@ footer {
   text-decoration: none !important;
 }
 .contact-card-icon {
-  width: 20px; height: 20px;
+  font-size: 1.25rem;
   flex-shrink: 0;
   color: var(--link);
-  fill: var(--link);
+  line-height: 1;
 }
 .contact-card-label {
   font-size: 0.7rem;
@@ -1435,4 +1443,11 @@ footer, .glance-card, .exp-entry, .hero-intro, .contact-card,
 
 [data-theme="dark"] .section-h2 {
   border-bottom-color: var(--border);
+}
+
+
+/* ── THEME TOGGLE ICON ── */
+#theme-toggle .ph {
+  font-size: 1rem;
+  pointer-events: none;
 }

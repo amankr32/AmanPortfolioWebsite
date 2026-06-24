@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aman Kumar — Full-Stack Developer</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+    <!-- Phosphor Icons — professional, consistent icon set -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phosphor-icons/2.1.1/umd/index.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
+    <!-- ══════════════ HEADER ══════════════ -->
     <header id="masthead">
       <div class="masthead-inner">
         <a href="#" class="site-title">Aman Kumar</a>
         <nav class="greedy-nav" aria-label="Main navigation">
-          <a href="#" id="nav-about" class="active">About</a>
+          <a href="#" id="nav-about"      class="active">About</a>
           <a href="#" id="nav-experience">Experience</a>
           <a href="#" id="nav-projects">Projects</a>
           <a href="#" id="nav-skills">Skills</a>
@@ -23,8 +24,7 @@
           <a href="#" id="nav-contact">Contact</a>
         </nav>
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <i id="theme-icon" class="ph ph-sun"></i>
         </button>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
           <span></span><span></span><span></span>
@@ -32,8 +32,9 @@
       </div>
     </header>
 
+    <!-- ══════════════ MOBILE NAV ══════════════ -->
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-      <a href="#" id="mnav-about" class="active">About</a>
+      <a href="#" id="mnav-about"      class="active">About</a>
       <a href="#" id="mnav-experience">Experience</a>
       <a href="#" id="mnav-projects">Projects</a>
       <a href="#" id="mnav-skills">Skills</a>
@@ -41,6 +42,7 @@
       <a href="#" id="mnav-contact">Contact</a>
     </nav>
 
+    <!-- ══════════════ MOBILE AUTHOR STRIP ══════════════ -->
     <div class="mobile-author-strip">
       <img id="mobile-avatar" src="AmanSahab.jpeg" alt="Aman Kumar" />
       <div id="mobile-fallback" class="mobile-avatar-fallback">AK</div>
@@ -49,25 +51,25 @@
         <div class="mobile-author-role">Full-Stack Developer · B.Tech CS @ PTU '27</div>
         <div class="mobile-social-links">
           <a href="https://www.linkedin.com/in/amankr32" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/amankr32" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://leetcode.com/amankr32" target="_blank" rel="noopener">LeetCode</a>
+          <a href="https://github.com/amankr32"          target="_blank" rel="noopener">GitHub</a>
+          <a href="https://leetcode.com/amankr32"        target="_blank" rel="noopener">LeetCode</a>
           <a href="mailto:amankumar.cs27@gmail.com">Email</a>
         </div>
       </div>
     </div>
 
+    <!-- ══════════════ MAIN LAYOUT ══════════════ -->
     <div id="main">
+
+      <!-- ─── SIDEBAR ─── -->
       <aside class="sidebar" aria-label="Author info">
         <div class="author-avatar">
           <img id="sidebar-avatar" src="AmanSahab.jpeg" alt="Aman Kumar" />
           <div id="sidebar-fallback" class="avatar-fallback">AK</div>
         </div>
         <div class="author-name">Aman Kumar</div>
-        <div class="author-bio">
-          Full-Stack (MERN) + ML · Research Intern @ IIT Ropar · B.Tech CS @ PTU '27
-        </div>
+        <div class="author-bio">Full-Stack (MERN) + ML · Research Intern @ IIT Ropar · B.Tech CS @ PTU '27</div>
 
-        <!-- Open to Work Badge -->
         <div class="open-to-work">
           <span class="otw-dot"></span>
           Open to SDE / ML Internships — Summer/Fall 2026
@@ -75,90 +77,63 @@
 
         <span class="follow-label">Connect</span>
         <ul class="author-links">
-          <!-- LinkedIn -->
           <li>
-            <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
+            <i class="ph ph-linkedin-logo link-icon"></i>
             <a href="https://www.linkedin.com/in/amankr32" target="_blank" rel="noopener">linkedin.com/in/amankr32</a>
           </li>
-          <!-- GitHub -->
           <li>
-            <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-            </svg>
+            <i class="ph ph-github-logo link-icon"></i>
             <a href="https://github.com/amankr32" target="_blank" rel="noopener">github.com/amankr32</a>
           </li>
-          <!-- LeetCode -->
           <li>
-            <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M13.483 0a1.374 1.374 0 00-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 00-1.209 2.104 5.35 5.35 0 00-.125 2.227 5.379 5.379 0 00.506 1.923 5.307 5.307 0 001.08 1.625l3.113 3.748.158.192a5.31 5.31 0 001.406 1.072 5.371 5.371 0 003.86.504 5.33 5.33 0 001.802-.811l.026-.018 3.016-2.068a.675.675 0 00.028-.952l-1.735-1.867a.674.674 0 00-.897-.065l-2.207 1.51a1.374 1.374 0 01-1.55-.021 1.37 1.37 0 01-.544-.95V9.368a1.374 1.374 0 012.356-.961l4.07 4.374a.674.674 0 00.958.003l1.818-1.843a.674.674 0 00-.003-.955L13.483 0zm4.773 12.358l-3.91-4.2a3.122 3.122 0 00-5.337 2.21v5.264a3.12 3.12 0 001.238 2.487 3.122 3.122 0 003.54.05l1.415-.969-1.004-1.08-1.162.797a1.374 1.374 0 01-1.55-.021 1.374 1.374 0 01-.477-.618V15.37l4.77-4.77-.523-.242z"/>
-            </svg>
+            <i class="ph ph-code link-icon"></i>
             <a href="https://leetcode.com/amankr32" target="_blank" rel="noopener">leetcode.com/amankr32</a>
           </li>
-          <!-- Email -->
           <li>
-            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
+            <i class="ph ph-envelope-simple link-icon"></i>
             <a href="mailto:amankumar.cs27@gmail.com">amankumar.cs27@gmail.com</a>
           </li>
-          <!-- Phone -->
           <li>
-            <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.29 6.29l1.41-1.41a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-            </svg>
+            <i class="ph ph-phone link-icon"></i>
             <a href="tel:+918084075974">+91 80840 75974</a>
           </li>
         </ul>
 
-        <!-- Quick Stats -->
         <div class="sidebar-stats">
-          <div class="stat-item">
-            <span class="stat-num">300+</span>
-            <span class="stat-label">DSA Problems</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num">Top 10%</span>
-            <span class="stat-label">University Batch</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num">8.43</span>
-            <span class="stat-label">CGPA / 10</span>
-          </div>
+          <div class="stat-item"><span class="stat-num">300+</span><span class="stat-label">DSA Problems</span></div>
+          <div class="stat-item"><span class="stat-num">Top 10%</span><span class="stat-label">University Batch</span></div>
+          <div class="stat-item"><span class="stat-num">8.43</span><span class="stat-label">CGPA / 10</span></div>
         </div>
       </aside>
 
+      <!-- ─── CONTENT ─── -->
       <main class="content">
 
-        <!-- ═══════════════════ ABOUT ═══════════════════ -->
+        <!-- ══════════════ ABOUT ══════════════ -->
         <section id="page-about" class="page-section active" aria-label="About">
 
-          <!-- Hero intro -->
           <div class="hero-intro">
             <div class="hero-greeting">Hi, I'm Aman 👋</div>
             <h1 class="hero-name">Full-Stack Developer &amp; ML Enthusiast</h1>
-            <p class="hero-tagline">
-              I build production-grade web systems — real-time, scalable, secure — and train ML models that solve real problems. Currently a Research Intern at <strong>IIT Ropar</strong>, graduating B.Tech CS from PTU in <strong>May 2027</strong>.
-            </p>
+            <p class="hero-tagline">I build production-grade web systems — real-time, scalable, secure — and train ML models that solve real problems. Currently a Research Intern at <strong>IIT Ropar</strong>, graduating B.Tech CS from PTU in <strong>May 2027</strong>.</p>
             <div class="hero-cta-row">
-              <a href="#" class="btn-primary" id="cta-projects">View Projects</a>
-              <a href="#" class="btn-secondary" id="cta-cv">Download Resume</a>
+              <a href="#" class="btn-primary" id="cta-projects">
+                <i class="ph ph-code-simple"></i> View Projects
+              </a>
+              <a href="#" class="btn-secondary" id="cta-cv">
+                <i class="ph ph-download-simple"></i> Download Resume
+              </a>
             </div>
           </div>
 
-          <!-- Why Hire Me — referral-focused summary -->
           <h2 class="section-h2" style="margin-top:2.5rem">
-            <span class="section-h2-icon">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12 14 14"/></svg>
-            </span>
+            <i class="ph ph-lightning section-h2-icon"></i>
             At a Glance
           </h2>
 
           <div class="glance-grid">
             <div class="glance-card">
-              <div class="glance-icon">🏛️</div>
+              <i class="ph ph-buildings glance-icon"></i>
               <div class="glance-body">
                 <div class="glance-title">Research Intern — IIT Ropar</div>
                 <div class="glance-sub">VLED Lab · May 2026 – Present</div>
@@ -166,7 +141,7 @@
               </div>
             </div>
             <div class="glance-card">
-              <div class="glance-icon">⚡</div>
+              <i class="ph ph-stack glance-icon"></i>
               <div class="glance-body">
                 <div class="glance-title">MERN · Next.js · WebSockets</div>
                 <div class="glance-sub">Full-Stack Focus</div>
@@ -174,7 +149,7 @@
               </div>
             </div>
             <div class="glance-card">
-              <div class="glance-icon">🏆</div>
+              <i class="ph ph-trophy glance-icon"></i>
               <div class="glance-body">
                 <div class="glance-title">Top 10 / 500+ Teams</div>
                 <div class="glance-sub">Quantum 3.0 Hackathon</div>
@@ -182,7 +157,7 @@
               </div>
             </div>
             <div class="glance-card">
-              <div class="glance-icon">🧠</div>
+              <i class="ph ph-brain glance-icon"></i>
               <div class="glance-body">
                 <div class="glance-title">300+ DSA · ML from Scratch</div>
                 <div class="glance-sub">LeetCode / GFG</div>
@@ -191,45 +166,31 @@
             </div>
           </div>
 
-          <!-- About paragraphs -->
           <h2 class="section-h2" style="margin-top:2.5rem">
-            <span class="section-h2-icon">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            </span>
+            <i class="ph ph-user section-h2-icon"></i>
             More About Me
           </h2>
           <div class="about-text">
-            <p>
-              I'm Aman — a third-year CS student at PTU building full-stack systems that go beyond coursework. I've interned at a full-stack MERN firm, contributed to open source (GirlScript Summer of Code), and am currently a Research Intern at IIT Ropar's VLED Lab working on AI-driven Agri-tech and Edu-tech platforms.
-            </p>
-            <p>
-              On the full-stack side, I work across the entire MERN stack — React and Next.js on the frontend, Node.js/Express APIs on the backend, MongoDB for data. I've built real-time chat with Socket.IO, P2P video streaming with WebRTC, and a distributed rate limiter. I care about performance: at my internship I cut API response time by 15% by profiling slow queries and adding targeted MongoDB indexes.
-            </p>
-            <p>
-              In ML, I've built a NanoGPT-style language model from scratch (transformer architecture, attention mechanism, character-level tokenization), a Credit Card Fraud Detection classifier with class-imbalance handling, and a Fake News Detection pipeline using NLP preprocessing and ensemble models — hands-on PyTorch, not just notebooks.
-            </p>
-            <p>
-              I'm actively looking for SDE or ML internship opportunities for <strong>Summer/Fall 2026</strong>. If you're building something interesting, reach me at <a href="mailto:amankumar.cs27@gmail.com">amankumar.cs27@gmail.com</a> or <a href="https://www.linkedin.com/in/amankr32" target="_blank" rel="noopener">LinkedIn</a>.
-            </p>
+            <p>I'm Aman — a third-year CS student at PTU building full-stack systems that go beyond coursework. I've interned at a full-stack MERN firm, contributed to open source (GirlScript Summer of Code), and am currently a Research Intern at IIT Ropar's VLED Lab working on AI-driven Agri-tech and Edu-tech platforms.</p>
+            <p>On the full-stack side, I work across the entire MERN stack — React and Next.js on the frontend, Node.js/Express APIs on the backend, MongoDB for data. I've built real-time chat with Socket.IO, P2P video streaming with WebRTC, and a distributed rate limiter. I care about performance: at my internship I cut API response time by 15% by profiling slow queries and adding targeted MongoDB indexes.</p>
+            <p>In ML, I've built a NanoGPT-style language model from scratch (transformer architecture, attention mechanism, character-level tokenization), a Credit Card Fraud Detection classifier with class-imbalance handling, and a Fake News Detection pipeline using NLP preprocessing and ensemble models — hands-on PyTorch, not just notebooks.</p>
+            <p>I'm actively looking for SDE or ML internship opportunities for <strong>Summer/Fall 2026</strong>. If you're building something interesting, reach me at <a href="mailto:amankumar.cs27@gmail.com">amankumar.cs27@gmail.com</a> or <a href="https://www.linkedin.com/in/amankr32" target="_blank" rel="noopener">LinkedIn</a>.</p>
           </div>
         </section>
 
-        <!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+        <!-- ══════════════ EXPERIENCE ══════════════ -->
         <section id="page-experience" class="page-section" aria-label="Experience">
 
           <h2 class="section-h2 first">
-            <span class="section-h2-icon">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-            </span>
+            <i class="ph ph-briefcase section-h2-icon"></i>
             Work Experience
           </h2>
 
-          <!-- IIT Ropar -->
           <div class="exp-entry">
             <div class="exp-header">
               <div class="exp-left">
                 <div class="exp-role">Research Intern — VLED Lab</div>
-                <div class="exp-org">Indian Institute of Technology, Ropar &nbsp;·&nbsp; Rupnagar, Punjab</div>
+                <div class="exp-org">Indian Institute of Technology, Ropar · Rupnagar, Punjab</div>
               </div>
               <div class="exp-date">May 2026 – Present</div>
             </div>
@@ -243,12 +204,11 @@
             </ul>
           </div>
 
-          <!-- GirlScript -->
           <div class="exp-entry">
             <div class="exp-header">
               <div class="exp-left">
                 <div class="exp-role">Open Source Contributor</div>
-                <div class="exp-org">GirlScript Summer of Code &nbsp;·&nbsp; New Delhi (Remote)</div>
+                <div class="exp-org">GirlScript Summer of Code · New Delhi (Remote)</div>
               </div>
               <div class="exp-date">Jun 2025 – Nov 2025</div>
             </div>
@@ -261,12 +221,11 @@
             </ul>
           </div>
 
-          <!-- Excellence Technology -->
           <div class="exp-entry">
             <div class="exp-header">
               <div class="exp-left">
                 <div class="exp-role">Full-Stack MERN Trainee</div>
-                <div class="exp-org">Excellence Technology &nbsp;·&nbsp; Chandigarh, Punjab</div>
+                <div class="exp-org">Excellence Technology · Chandigarh, Punjab</div>
               </div>
               <div class="exp-date">Jun 2025 – Jul 2025</div>
             </div>
@@ -280,9 +239,7 @@
           </div>
 
           <h2 class="section-h2" style="margin-top:2.5rem">
-            <span class="section-h2-icon">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/></svg>
-            </span>
+            <i class="ph ph-graduation-cap section-h2-icon"></i>
             Education
           </h2>
 
@@ -304,9 +261,7 @@
           </div>
 
           <h2 class="section-h2" style="margin-top:2.5rem">
-            <span class="section-h2-icon">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </span>
+            <i class="ph ph-medal section-h2-icon"></i>
             Achievements
           </h2>
 
@@ -320,33 +275,27 @@
           </div>
         </section>
 
-        <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+        <!-- ══════════════ PROJECTS ══════════════ -->
         <section id="page-projects" class="page-section" aria-label="Projects">
 
           <h2 class="section-h2 first">
-            <span class="section-h2-icon">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>
-            </span>
+            <i class="ph ph-monitor section-h2-icon"></i>
             Full-Stack Projects
           </h2>
 
           <div class="proj-list">
-
             <div class="proj-item">
               <span class="proj-num">01</span>
               <div class="proj-body">
                 <div class="proj-header">
                   <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">PTU Bazar — Multi-Tenant E-Commerce</a>
                   <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                    GitHub ↗
+                    <i class="ph ph-github-logo"></i> GitHub
                   </a>
                 </div>
-                <div class="proj-sub">Next.js · Node.js · PostgreSQL &nbsp;·&nbsp; <span class="proj-year">2026 · Ongoing</span></div>
+                <div class="proj-sub">Next.js · Node.js · PostgreSQL · <span class="proj-year">2026 · Ongoing</span></div>
                 <p class="proj-desc">Scalable multi-tenant architecture supporting 50+ independent university vendors. Tenant-specific dashboards reduced merchant onboarding time by 40%. Integrated payment gateways and real-time tracking with 99.9% availability via cloud deployment.</p>
-                <div class="proj-tags">
-                  <span class="ptag">Next.js</span><span class="ptag">Node.js</span><span class="ptag">PostgreSQL</span><span class="ptag">Multi-Tenancy</span>
-                </div>
+                <div class="proj-tags"><span class="ptag">Next.js</span><span class="ptag">Node.js</span><span class="ptag">PostgreSQL</span><span class="ptag">Multi-Tenancy</span></div>
               </div>
             </div>
 
@@ -356,15 +305,12 @@
                 <div class="proj-header">
                   <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">Sync Pad — Real-Time Collaborative Editor</a>
                   <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                    GitHub ↗
+                    <i class="ph ph-github-logo"></i> GitHub
                   </a>
                 </div>
-                <div class="proj-sub">Socket.IO · React · Express · CodeMirror &nbsp;·&nbsp; <span class="proj-year">2025</span></div>
+                <div class="proj-sub">Socket.IO · React · Express · CodeMirror · <span class="proj-year">2025</span></div>
                 <p class="proj-desc">Real-time collaborative code editor with sub-100ms synchronization latency. WebSocket-based room management supports 100+ concurrent connections with presence tracking and conflict resolution.</p>
-                <div class="proj-tags">
-                  <span class="ptag">Socket.IO</span><span class="ptag">React</span><span class="ptag">Express</span><span class="ptag">WebSockets</span>
-                </div>
+                <div class="proj-tags"><span class="ptag">Socket.IO</span><span class="ptag">React</span><span class="ptag">Express</span><span class="ptag">WebSockets</span></div>
               </div>
             </div>
 
@@ -374,45 +320,34 @@
                 <div class="proj-header">
                   <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">Full-Stack Blog Platform</a>
                   <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                    GitHub ↗
+                    <i class="ph ph-github-logo"></i> GitHub
                   </a>
                 </div>
-                <div class="proj-sub">MongoDB · Express · React · Node.js &nbsp;·&nbsp; <span class="proj-year">2025</span></div>
+                <div class="proj-sub">MongoDB · Express · React · Node.js · <span class="proj-year">2025</span></div>
                 <p class="proj-desc">MERN multi-user platform with 30% faster API responses via MongoDB indexing and RESTful design. JWT-based auth managing 1,000+ secure sessions with zero reported breaches. Responsive Material UI boosted user engagement by 25%.</p>
-                <div class="proj-tags">
-                  <span class="ptag">MongoDB</span><span class="ptag">Express</span><span class="ptag">React</span><span class="ptag">JWT</span><span class="ptag">Material UI</span>
-                </div>
+                <div class="proj-tags"><span class="ptag">MongoDB</span><span class="ptag">Express</span><span class="ptag">React</span><span class="ptag">JWT</span><span class="ptag">Material UI</span></div>
               </div>
             </div>
-
           </div>
 
-          <!-- ML Projects -->
           <h2 class="section-h2" style="margin-top:2.5rem">
-            <span class="section-h2-icon">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-            </span>
+            <i class="ph ph-robot section-h2-icon"></i>
             ML / AI Projects
           </h2>
 
           <div class="proj-list">
-
             <div class="proj-item">
               <span class="proj-num">01</span>
               <div class="proj-body">
                 <div class="proj-header">
                   <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">NanoGPT — Language Model from Scratch</a>
                   <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                    GitHub ↗
+                    <i class="ph ph-github-logo"></i> GitHub
                   </a>
                 </div>
-                <div class="proj-sub">PyTorch · Python &nbsp;·&nbsp; <span class="proj-year">2025</span></div>
+                <div class="proj-sub">PyTorch · Python · <span class="proj-year">2025</span></div>
                 <p class="proj-desc">Built a GPT-style transformer from scratch — multi-head attention, positional encoding, character-level tokenization. Trained and debugged full training loops in PyTorch without relying on pre-built abstractions.</p>
-                <div class="proj-tags">
-                  <span class="ptag">PyTorch</span><span class="ptag">Transformers</span><span class="ptag">NLP</span>
-                </div>
+                <div class="proj-tags"><span class="ptag">PyTorch</span><span class="ptag">Transformers</span><span class="ptag">NLP</span></div>
               </div>
             </div>
 
@@ -422,15 +357,12 @@
                 <div class="proj-header">
                   <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">Credit Card Fraud Detection</a>
                   <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                    GitHub ↗
+                    <i class="ph ph-github-logo"></i> GitHub
                   </a>
                 </div>
-                <div class="proj-sub">Scikit-learn · XGBoost · Python &nbsp;·&nbsp; <span class="proj-year">2025</span></div>
+                <div class="proj-sub">Scikit-learn · XGBoost · Python · <span class="proj-year">2025</span></div>
                 <p class="proj-desc">Binary classifier tackling severe class imbalance via SMOTE and threshold tuning. Benchmarked Logistic Regression, Random Forest, and XGBoost — optimised for the precision-recall trade-off in fraud contexts.</p>
-                <div class="proj-tags">
-                  <span class="ptag">Scikit-learn</span><span class="ptag">XGBoost</span><span class="ptag">SMOTE</span><span class="ptag">Python</span>
-                </div>
+                <div class="proj-tags"><span class="ptag">Scikit-learn</span><span class="ptag">XGBoost</span><span class="ptag">SMOTE</span><span class="ptag">Python</span></div>
               </div>
             </div>
 
@@ -440,28 +372,22 @@
                 <div class="proj-header">
                   <a href="https://github.com/amankr32" class="proj-name" target="_blank" rel="noopener">Fake News Detection — NLP Pipeline</a>
                   <a href="https://github.com/amankr32" class="proj-gh-link" target="_blank" rel="noopener">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                    GitHub ↗
+                    <i class="ph ph-github-logo"></i> GitHub
                   </a>
                 </div>
-                <div class="proj-sub">Python · NLP · Ensemble Models &nbsp;·&nbsp; <span class="proj-year">2025</span></div>
+                <div class="proj-sub">Python · NLP · Ensemble Models · <span class="proj-year">2025</span></div>
                 <p class="proj-desc">End-to-end NLP pipeline: text preprocessing, TF-IDF and word embeddings, ensemble classifiers. Explored underfitting vs. overfitting using cross-validation and feature ablation.</p>
-                <div class="proj-tags">
-                  <span class="ptag">NLP</span><span class="ptag">TF-IDF</span><span class="ptag">Ensemble</span><span class="ptag">Python</span>
-                </div>
+                <div class="proj-tags"><span class="ptag">NLP</span><span class="ptag">TF-IDF</span><span class="ptag">Ensemble</span><span class="ptag">Python</span></div>
               </div>
             </div>
-
           </div>
         </section>
 
-        <!-- ═══════════════════ SKILLS ═══════════════════ -->
+        <!-- ══════════════ SKILLS ══════════════ -->
         <section id="page-skills" class="page-section" aria-label="Skills">
 
           <h2 class="section-h2 first">
-            <span class="section-h2-icon">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </span>
+            <i class="ph ph-code section-h2-icon"></i>
             Technical Skills
           </h2>
 
@@ -474,7 +400,6 @@
                 <span class="skill-pill skill-strong">JavaScript</span>
               </div>
             </div>
-
             <div class="skill-group">
               <div class="skill-group-label">Frontend</div>
               <div class="skill-pills">
@@ -484,9 +409,8 @@
                 <span class="skill-pill">HTML / CSS</span>
               </div>
             </div>
-
             <div class="skill-group">
-              <div class="skill-group-label">Backend &amp; APIs</div>
+              <div class="skill-group-label">Backend</div>
               <div class="skill-pills">
                 <span class="skill-pill skill-strong">Node.js</span>
                 <span class="skill-pill skill-strong">Express.js</span>
@@ -496,7 +420,6 @@
                 <span class="skill-pill">JWT Auth</span>
               </div>
             </div>
-
             <div class="skill-group">
               <div class="skill-group-label">Databases</div>
               <div class="skill-pills">
@@ -505,7 +428,6 @@
                 <span class="skill-pill">PostgreSQL</span>
               </div>
             </div>
-
             <div class="skill-group">
               <div class="skill-group-label">ML / AI</div>
               <div class="skill-pills">
@@ -517,9 +439,8 @@
                 <span class="skill-pill">Pandas / NumPy</span>
               </div>
             </div>
-
             <div class="skill-group">
-              <div class="skill-group-label">Tools &amp; DevOps</div>
+              <div class="skill-group-label">Tools</div>
               <div class="skill-pills">
                 <span class="skill-pill skill-strong">Git &amp; GitHub</span>
                 <span class="skill-pill">Postman</span>
@@ -528,7 +449,6 @@
                 <span class="skill-pill">CI/CD</span>
               </div>
             </div>
-
             <div class="skill-group">
               <div class="skill-group-label">CS Fundamentals</div>
               <div class="skill-pills">
@@ -541,69 +461,61 @@
             </div>
           </div>
 
-          <!-- What I can do for you -->
-          <h2 class="section-h2" style="margin-top: 2.5rem">
-            <span class="section-h2-icon">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </span>
+          <h2 class="section-h2" style="margin-top:2.5rem">
+            <i class="ph ph-users-three section-h2-icon"></i>
             What I Can Do for Your Team
           </h2>
 
           <div class="value-grid">
             <div class="value-card">
-              <div class="value-icon">🔧</div>
+              <i class="ph ph-wrench value-icon"></i>
               <div class="value-title">Ship Full-Stack Features</div>
               <p class="value-desc">From React UI to Express API to MongoDB — I can own a feature end-to-end and ship it without needing constant hand-holding.</p>
             </div>
             <div class="value-card">
-              <div class="value-icon">⚡</div>
+              <i class="ph ph-gauge value-icon"></i>
               <div class="value-title">Optimize Performance</div>
               <p class="value-desc">Comfortable profiling slow queries, adding indexes, and reducing response times — already did this 15% at my internship.</p>
             </div>
             <div class="value-card">
-              <div class="value-icon">🤝</div>
-              <div class="value-title">Work in Teams & Open Source</div>
-              <p class="value-desc">Reviewed PRs, wrote documentation, and collaborated across distributed teams at GirlScript — not just solo project builder.</p>
+              <i class="ph ph-git-pull-request value-icon"></i>
+              <div class="value-title">Work in Teams &amp; Open Source</div>
+              <p class="value-desc">Reviewed PRs, wrote documentation, and collaborated across distributed teams at GirlScript — not just a solo project builder.</p>
             </div>
             <div class="value-card">
-              <div class="value-icon">🧬</div>
+              <i class="ph ph-intersect value-icon"></i>
               <div class="value-title">Bridge Web + ML</div>
               <p class="value-desc">Comfortable on both sides — can wire up a PyTorch model to a Node.js API, or integrate AI features into a Next.js app.</p>
             </div>
           </div>
         </section>
 
-        <!-- ═══════════════════ RESUME ═══════════════════ -->
+        <!-- ══════════════ RESUME ══════════════ -->
         <section id="page-cv" class="page-section" aria-label="Resume">
           <div class="cv-viewer-wrap">
             <div class="cv-viewer-toolbar">
-              <span class="cv-file-name">Curriculum Vitae — Aman Kumar</span>
+              <span class="cv-file-name">
+                <i class="ph ph-file-text"></i>
+                Curriculum Vitae — Aman Kumar
+              </span>
               <div class="cv-toolbar-actions">
                 <a href="CV26_AmanKumar_20040827.pdf" download class="cv-btn cv-btn-download">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                  Download
+                  <i class="ph ph-download-simple"></i> Download
                 </a>
               </div>
             </div>
-            <iframe
-              src="CV26_AmanKumar_20040827.pdf#toolbar=0&navpanes=0&scrollbar=0"
-              class="cv-iframe"
-              title="Aman Kumar CV"
-            ></iframe>
+            <iframe src="CV26_AmanKumar_20040827.pdf#toolbar=0&navpanes=0&scrollbar=0" class="cv-iframe" title="Aman Kumar CV"></iframe>
           </div>
         </section>
 
-        <!-- ═══════════════════ CONTACT ═══════════════════ -->
+        <!-- ══════════════ CONTACT ══════════════ -->
         <section id="page-contact" class="page-section" aria-label="Contact">
 
           <h2 class="section-h2 first">
-            <span class="section-h2-icon">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </span>
+            <i class="ph ph-paper-plane-tilt section-h2-icon"></i>
             Get In Touch
           </h2>
 
-          <!-- Referral-friendly pitch -->
           <div class="contact-pitch">
             <p>I'm actively looking for <strong>SDE or ML internship opportunities for Summer/Fall 2026</strong>. If you work at a company you'd like to refer me to, or just want to connect, I'd love to hear from you.</p>
             <p>I'm a quick learner, comfortable with ambiguity, and have shipped production code — I won't waste your referral.</p>
@@ -611,28 +523,28 @@
 
           <div class="contact-cards">
             <a href="mailto:amankumar.cs27@gmail.com" class="contact-card">
-              <svg class="contact-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <i class="ph ph-envelope-simple contact-card-icon"></i>
               <div>
                 <div class="contact-card-label">Primary Email</div>
                 <div class="contact-card-val">amankumar.cs27@gmail.com</div>
               </div>
             </a>
             <a href="https://www.linkedin.com/in/amankr32" target="_blank" rel="noopener" class="contact-card">
-              <svg class="contact-card-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <i class="ph ph-linkedin-logo contact-card-icon"></i>
               <div>
                 <div class="contact-card-label">LinkedIn</div>
                 <div class="contact-card-val">linkedin.com/in/amankr32</div>
               </div>
             </a>
             <a href="https://github.com/amankr32" target="_blank" rel="noopener" class="contact-card">
-              <svg class="contact-card-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <i class="ph ph-github-logo contact-card-icon"></i>
               <div>
                 <div class="contact-card-label">GitHub</div>
                 <div class="contact-card-val">github.com/amankr32</div>
               </div>
             </a>
             <a href="tel:+918084075974" class="contact-card">
-              <svg class="contact-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.29 6.29l1.41-1.41a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <i class="ph ph-phone contact-card-icon"></i>
               <div>
                 <div class="contact-card-label">Phone</div>
                 <div class="contact-card-val">+91 80840 75974</div>
@@ -640,10 +552,9 @@
             </a>
           </div>
 
-          <!-- Download resume CTA -->
           <div class="contact-resume-cta">
             <a href="CV26_AmanKumar_20040827.pdf" download class="btn-primary">
-              Download My Resume (PDF)
+              <i class="ph ph-download-simple"></i> Download My Resume (PDF)
             </a>
           </div>
 
@@ -654,11 +565,11 @@
 
     <footer>
       &copy; 2026 Aman Kumar &nbsp;·&nbsp;
-      <a href="https://github.com/amankr32" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/amankr32"          target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
       &nbsp;·&nbsp;
-      <a href="https://www.linkedin.com/in/amankr32" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/amankr32" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
       &nbsp;·&nbsp;
-      <a href="mailto:amankumar.cs27@gmail.com">Email</a>
+      <a href="mailto:amankumar.cs27@gmail.com"><i class="ph ph-envelope-simple"></i> Email</a>
     </footer>
 
     <script src="script.js"></script>

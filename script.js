@@ -108,18 +108,13 @@
 
   /* ── THEME TOGGLE ── */
   var themeToggle = document.getElementById('theme-toggle');
-  var iconSun = themeToggle ? themeToggle.querySelector('.icon-sun') : null;
-  var iconMoon = themeToggle ? themeToggle.querySelector('.icon-moon') : null;
+  var themeIcon   = document.getElementById('theme-icon');
 
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('ak-theme', theme);
-    if (theme === 'dark') {
-      if (iconSun) iconSun.style.display = 'none';
-      if (iconMoon) iconMoon.style.display = 'block';
-    } else {
-      if (iconSun) iconSun.style.display = 'block';
-      if (iconMoon) iconMoon.style.display = 'none';
+    if (themeIcon) {
+      themeIcon.className = theme === 'dark' ? 'ph ph-moon' : 'ph ph-sun';
     }
   }
 
